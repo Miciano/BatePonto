@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		98948B77204B9973008C8689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98948B76204B9973008C8689 /* AppDelegate.swift */; };
-		98948B79204B9973008C8689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98948B78204B9973008C8689 /* ViewController.swift */; };
 		98948B7C204B9973008C8689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98948B7A204B9973008C8689 /* Main.storyboard */; };
 		98948B7F204B9973008C8689 /* BatePonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98948B7D204B9973008C8689 /* BatePonto.xcdatamodeld */; };
 		98948B81204B9973008C8689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98948B80204B9973008C8689 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		98948B73204B9973008C8689 /* BatePonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatePonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98948B76204B9973008C8689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98948B78204B9973008C8689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98948B7B204B9973008C8689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98948B7E204B9973008C8689 /* BatePonto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatePonto.xcdatamodel; sourceTree = "<group>"; };
 		98948B80204B9973008C8689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				98FC904B204B9ED400535CD6 /* Protocol */,
 				98FC904A204B9EC400535CD6 /* Extension */,
 				98948B76204B9973008C8689 /* AppDelegate.swift */,
-				98948B78204B9973008C8689 /* ViewController.swift */,
 				98948B7A204B9973008C8689 /* Main.storyboard */,
 				98948B80204B9973008C8689 /* Assets.xcassets */,
 				98948B82204B9973008C8689 /* LaunchScreen.storyboard */,
@@ -187,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98948B79204B9973008C8689 /* ViewController.swift in Sources */,
 				98FC904F204B9F3500535CD6 /* DateExtension.swift in Sources */,
 				98FC9054204B9F4200535CD6 /* DatePickerViewController.swift in Sources */,
 				98FC9051204B9F3C00535CD6 /* ActionButtonProtocol.swift in Sources */,

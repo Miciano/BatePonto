@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerViewController" customModule="BatePonto" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="Y5r-a2-HEM" id="uZt-wN-aTz"/>
+                <outlet property="view" destination="7YE-O9-4lE" id="bxi-eQ-CT6"/>
+                <outlet property="viewBackGround" destination="sHC-cE-1eH" id="2Aa-wu-bEk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7YE-O9-4lE">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHC-cE-1eH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </view>
+                <datePicker opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Y5r-a2-HEM">
+                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <date key="date" timeIntervalSinceReferenceDate="539654834.80469">
+                        <!--2018-02-07 00:07:14 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="pt_BR"/>
+                </datePicker>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eo-kh-KE0">
+                    <rect key="frame" x="0.0" y="411" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20i-SB-frv">
+                            <rect key="frame" x="297" y="4" width="70" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="RwP-J7-HdE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <state key="normal" title="OK"/>
+                            <connections>
+                                <action selector="confirmAction:" destination="-1" eventType="touchUpInside" id="GcJ-Xh-otx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-AZ-I7b">
+                            <rect key="frame" x="8" y="4" width="70" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="A04-dv-u2B"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <state key="normal" title="Cancelar"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="qUr-pg-0Ie"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6HR-HZ-AKA"/>
+                        <constraint firstItem="aeI-AZ-I7b" firstAttribute="leading" secondItem="5eo-kh-KE0" secondAttribute="leadingMargin" id="GWS-f0-LLH"/>
+                        <constraint firstItem="aeI-AZ-I7b" firstAttribute="centerY" secondItem="5eo-kh-KE0" secondAttribute="centerY" id="QV9-gm-9gB"/>
+                        <constraint firstItem="20i-SB-frv" firstAttribute="trailing" secondItem="5eo-kh-KE0" secondAttribute="trailingMargin" id="mLO-bJ-Ubs"/>
+                        <constraint firstItem="20i-SB-frv" firstAttribute="centerY" secondItem="5eo-kh-KE0" secondAttribute="centerY" id="zy2-sF-g6K"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5eo-kh-KE0" firstAttribute="leading" secondItem="l0b-UI-y3I" secondAttribute="leading" id="AdO-Ij-G96"/>
+                <constraint firstItem="Y5r-a2-HEM" firstAttribute="bottom" secondItem="l0b-UI-y3I" secondAttribute="bottom" id="GgR-oq-SBl"/>
+                <constraint firstItem="sHC-cE-1eH" firstAttribute="bottom" secondItem="l0b-UI-y3I" secondAttribute="bottom" id="HGV-5B-Fe3"/>
+                <constraint firstItem="sHC-cE-1eH" firstAttribute="top" secondItem="7YE-O9-4lE" secondAttribute="top" id="U57-P0-Reg"/>
+                <constraint firstItem="sHC-cE-1eH" firstAttribute="leading" secondItem="l0b-UI-y3I" secondAttribute="leading" id="WgD-Jp-U2h"/>
+                <constraint firstItem="Y5r-a2-HEM" firstAttribute="leading" secondItem="l0b-UI-y3I" secondAttribute="leading" id="Y8p-zj-FOO"/>
+                <constraint firstItem="sHC-cE-1eH" firstAttribute="trailing" secondItem="l0b-UI-y3I" secondAttribute="trailing" id="c5S-W8-qNP"/>
+                <constraint firstItem="Y5r-a2-HEM" firstAttribute="trailing" secondItem="l0b-UI-y3I" secondAttribute="trailing" id="dtf-CN-wCW"/>
+                <constraint firstItem="5eo-kh-KE0" firstAttribute="trailing" secondItem="l0b-UI-y3I" secondAttribute="trailing" id="eSh-Gb-W5z"/>
+                <constraint firstItem="Y5r-a2-HEM" firstAttribute="top" secondItem="5eo-kh-KE0" secondAttribute="bottom" id="whq-kt-vgC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="l0b-UI-y3I"/>
+            <point key="canvasLocation" x="60.5" y="-15.5"/>
+        </view>
+    </objects>
+</document>
